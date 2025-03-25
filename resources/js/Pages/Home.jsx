@@ -676,16 +676,18 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             className="w-1/4 p-2 flex-shrink-0"
                         >
                             <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                            <div className="relative">
-                                <img 
-                                src={car.imageUrl} 
-                                alt={`${activeBrand} ${car.model}`} 
-                                className="w-full h-48 object-cover"
-                                />
-                                <div className="absolute top-4 left-4 bg-orange-600 text-white px-2 py-1 rounded-md text-sm">
-                                {car.year}
+                            <Link>
+                                <div className="relative">
+                                    <img 
+                                        src={car.imageUrl} 
+                                        alt={`${activeBrand} ${car.model}`} 
+                                        className="w-full h-48 object-cover"
+                                        />
+                                        <div className="absolute top-4 left-4 bg-orange-600 text-white px-2 py-1 rounded-md text-sm">
+                                        {car.year}
+                                        </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold">{activeBrand} {car.model}</h3>
                                 <p className="text-gray-400 text-sm">{car.type}</p>

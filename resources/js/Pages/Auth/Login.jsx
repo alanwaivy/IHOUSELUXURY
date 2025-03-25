@@ -21,8 +21,10 @@ export default function Login({ status, canResetPassword }) {
         });
     };
 
+
     return (
-        <GuestLayout>
+        <>
+            <GuestLayout>
             <Head title="Log in" />
 
             {status && (
@@ -96,5 +98,6 @@ export default function Login({ status, canResetPassword }) {
                 </div>
             </form>
         </GuestLayout>
+        </>
     );
 }
