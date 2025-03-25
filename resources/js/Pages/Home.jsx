@@ -405,7 +405,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             {/* Navigation Bar */}
             <nav className="relative z-10 flex justify-between items-center p-6">
                 <div className="text-white text-2xl font-bold">
-                <span className="text-white">LUXURY</span> <span className="text-orange-500">AUTO</span>
+                <span className="text-orange-500">I</span>
+                <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
                 </div>
                 <div className="flex space-x-6 text-white">
                 <a href="#" className="hover:text-orange-500">Accueil</a>
