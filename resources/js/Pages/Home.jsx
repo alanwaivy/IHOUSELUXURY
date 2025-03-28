@@ -409,9 +409,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
                 </div>
                 <div className="flex space-x-6 text-white">
-                <a href="#" className="hover:text-orange-500">Accueil</a>
-                <a href="#" className="hover:text-orange-500">Stock</a>
-                <a href="#" className="hover:text-orange-500">Contact</a>
+                <Link href="/" className="hover:text-orange-500">Accueil</Link>
+                <Link href="/stock" className="hover:text-orange-500">Stock</Link>
+                <Link href="/contact" className="hover:text-orange-500">Contact</Link>
                 </div>
                 <div className="flex space-x-4 text-white">
                 <Link href={route('login')} className="flex items-center space-x-1 hover:text-orange-500">

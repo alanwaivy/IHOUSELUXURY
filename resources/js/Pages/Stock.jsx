@@ -66,28 +66,29 @@ const Stock = () => {
   return (
 
     <>
-          {/* Navigation Bar */}
-          <nav className="relative z-10 flex justify-between items-center p-6">
-                       <div className="text-white text-2xl font-bold">
-                       <span className="text-orange-500">I</span>
-                       <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
-                       </div>
-                       <div className="flex space-x-6 text-white">
-                       <a href="#" className="hover:text-orange-500">Accueil</a>
-                       <a href="#" className="hover:text-orange-500">Stock</a>
-                       <a href="#" className="hover:text-orange-500">Contact</a>
-                       </div>
-                       <div className="flex space-x-4 text-white">
-                       <Link href={route('login')} className="flex items-center space-x-1 hover:text-orange-500">
-                           <FaUser />
-                           <span>Login</span>
-                       </Link>
-                       <Link href={route('register')} className="flex items-center space-x-1 hover:text-orange-500">
-                           <FaUserPlus />
-                           <span>Register</span>
-                       </Link>
-                       </div>
-                   </nav>
+         
+    {/* Navigation Bar */}
+    <nav className="relative z-10 flex justify-between items-center p-6">
+        <div className="text-white text-2xl font-bold">
+        <span className="text-orange-500">I</span>
+        <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
+        </div>
+        <div className="flex space-x-6 text-white">
+        <Link href="/" className="hover:text-orange-500">Accueil</Link>
+        <Link href="/stock" className="hover:text-orange-500">Stock</Link>
+        <Link href="/contact" className="hover:text-orange-500">Contact</Link>
+        </div>
+        <div className="flex space-x-4 text-white">
+        <Link href={route('login')} className="flex items-center space-x-1 hover:text-orange-500">
+            <FaUser />
+            <span>Login</span>
+        </Link>
+        <Link href={route('register')} className="flex items-center space-x-1 hover:text-orange-500">
+            <FaUserPlus />
+            <span>Register</span>
+        </Link>
+        </div>
+    </nav>
     
     <div className="bg-gray-900 text-white p-4">
 
