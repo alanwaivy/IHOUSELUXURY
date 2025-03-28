@@ -89,7 +89,6 @@ const Stock = () => {
         </Link>
         </div>
     </nav>
-    
     <div className="bg-gray-900 text-white p-4">
 
           
@@ -266,7 +265,7 @@ const Stock = () => {
       </div>
 
       {/* Tabs and Search Bar */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-8">
         <div className="flex space-x-4">
           <button
             onClick={() => handleTabChange('Tout')}
@@ -332,6 +331,48 @@ const Stock = () => {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Stock Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Car Card 1 */}
+        <div className="bg-gray-800 rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="BMW M4" className="w-full h-48 object-cover"/>
+          <div className="p-4">
+            <h3 className="text-xl font-bold">BMW M4 Competition</h3>
+            <p className="text-gray-400">2023 • 1,500 km</p>
+            <div className="mt-2 flex justify-between items-center">
+              <span className="text-orange-500 font-bold">€89,900</span>
+              <button className="bg-orange-500 text-white px-4 py-2 rounded">Details</button>
+            </div>
+          </div>
+        </div>
+
+        {/* Car Card 2 */}
+        <div className="bg-gray-800 rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1617654112368-307921291f42" alt="Mercedes AMG" className="w-full h-48 object-cover"/>
+          <div className="p-4">
+            <h3 className="text-xl font-bold">Mercedes-AMG GT</h3>
+            <p className="text-gray-400">2022 • 8,500 km</p>
+            <div className="mt-2 flex justify-between items-center">
+              <span className="text-orange-500 font-bold">€125,000</span>
+              <button className="bg-orange-500 text-white px-4 py-2 rounded">Details</button>
+            </div>
+          </div>
+        </div>
+
+        {/* Car Card 3 */}
+        <div className="bg-gray-800 rounded-lg overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16" alt="Porsche 911" className="w-full h-48 object-cover"/>
+          <div className="p-4">
+            <h3 className="text-xl font-bold">Porsche 911 GT3</h3>
+            <p className="text-gray-400">2023 • 500 km</p>
+            <div className="mt-2 flex justify-between items-center">
+              <span className="text-orange-500 font-bold">€195,000</span>
+              <button className="bg-orange-500 text-white px-4 py-2 rounded">Details</button>
+            </div>
           </div>
         </div>
       </div>
