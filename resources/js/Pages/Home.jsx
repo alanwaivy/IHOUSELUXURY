@@ -7,7 +7,6 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
-
     const [selectedMake, setSelectedMake] = useState('All Makes');
     const [selectedModel, setSelectedModel] = useState('All Models');
     const [maxPrice, setMaxPrice] = useState('Max Price');
@@ -426,7 +425,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             </nav>
 
             {/* Hero Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+            <div className="relative z-10 flex flex-col items-center pb-20 justify-center h-full text-center text-white ">
                 <h1 className="text-5xl md:text-6xl font-bold mb-8">
                 TROUVER VOTRE <span className="text-orange-500">VÉHICULE</span>
                 </h1>
@@ -489,6 +488,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
 
             </div>
+
             </div>
 
             {/* Main section for new cars */}
@@ -586,7 +586,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <span className="text-orange-600 ml-2">Luxury Auto</span> ?
                 </h2>
                 </div>
-
+            
                 {/* Social media icons - top right of the section */}
                 <div className="absolute right-8 top-4 flex space-x-4 text-gray-400">
                 <a href="#" className="hover:text-white"><i className="fab fa-facebook"></i></a>
@@ -596,7 +596,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
 
                 {/* Features grid - responsive layout */}
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-8  py-8">
                 {features.map((feature, index) => (
                     // Individual feature card with hover effect
                     <div 
@@ -621,12 +621,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 ))}
                 </div>
 
-                {/* Call to action button */}
-                <div className="text-center mt-12">
-                <button className="bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors">
-                    Voir 181 Neuf
-                </button>
-                </div>
+              
             </div>
             </div>
 
