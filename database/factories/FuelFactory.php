@@ -4,20 +4,16 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Fuel>
- */
 class FuelFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
+    public function definition()
     {
+        $fuelTypes = ['Gasoline', 'Diesel', 'Electric', 'Hybrid', 'LPG'];
+        
         return [
-            //
+            'type' => $this->faker->unique()->randomElement($fuelTypes),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

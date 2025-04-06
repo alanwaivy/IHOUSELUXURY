@@ -10,7 +10,7 @@ class CarModel extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'brand_id', 'price', 'transmission', 'fuel_type_id'
+        'name', 'brand_id', 'price', 'transmission', 'fuel_id'
     ];
 
     public function brand()

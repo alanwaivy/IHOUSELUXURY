@@ -10,7 +10,7 @@ class Fuel extends Model
     use HasFactory;
 
     protected $fillable = [
-        'fuel_type_name'
+        'fuel_name'
     ];
 
     public function carModels()
