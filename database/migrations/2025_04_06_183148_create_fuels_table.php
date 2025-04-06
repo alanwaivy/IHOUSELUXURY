@@ -9,13 +9,15 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('fuels', function (Blueprint $table) {
+        Schema::create('fuel_types', function (Blueprint $table) {
             $table->id();
+            $table->string('fuel_type_name');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
