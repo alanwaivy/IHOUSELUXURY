@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 
 namespace App\Models;
@@ -11,21 +11,16 @@ class Car extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'brand_id', 'price', 'transmission', 'fuel_type_id'
+        'car_model_id', 'color', 'kilometrage', 'status', 'quantity'
     ];
 
-    public function brand()
+    public function carModel()
     {
-        return $this->belongsTo(Brand::class);
+        return $this->belongsTo(CarModel::class);
     }
 
-    public function fuelType()
+    public function rentalHistory()
     {
-        return $this->belongsTo(FuelType::class);
-    }
-
-    public function carInstances()
-    {
-        return $this->hasMany(CarInstance::class);
+        return $this->hasMany(RentalHistory::class);
     }
 }
