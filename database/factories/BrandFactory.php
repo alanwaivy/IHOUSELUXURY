@@ -16,10 +16,10 @@ class BrandFactory extends Factory
      */
     public function definition()
 {
-    $carMarkes = ['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes', 'Audi', 'Tesla'];
+    $carBrands = ['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes', 'Audi', 'Tesla'];
 
     return [
-        'name' => $this->faker->randomElement($carMarkes),        
+        'name' => $this->faker->randomElement($carBrands),        
         'image_url' => $this->faker->imageUrl(400, 300, 'cars')
     ];
 }

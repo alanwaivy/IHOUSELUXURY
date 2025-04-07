@@ -4,12 +4,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+//use \App\Models\Brand;
+use \App\Models\Car;
 
 Route::get('/', function () {
     return Inertia::render('Home', [
        
                'carss' => \App\Models\Car::with('brand')->get(),
-               'marks' => \App\Models\Brand::all(),
+               'brands' => \App\Models\Brand::with('name')->get(),
+               'models' => \App\Models\Car::distinct()->pluck('model'),
+               'maxPrice' => Car::max('price') 
        
     ]);
 });
