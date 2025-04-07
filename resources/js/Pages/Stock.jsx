@@ -128,20 +128,7 @@ const Stock = () => {
           <option value="Mustang">Mustang</option>
         </select>
 
-        <select
-          name="condition"
-          value={filters.condition}
-          onChange={handleFilterChange}
-          className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-        >
-          <option value="">Condition</option>
-          {conditionOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-
+     
         <input
           type="text"
           name="minPrix"
@@ -169,20 +156,7 @@ const Stock = () => {
           className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
 
-        <select
-          name="driveType"
-          value={filters.driveType}
-          onChange={handleFilterChange}
-          className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-        >
-          <option value="">Drive Type</option>
-          {driveTypeOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-
+      
         <select
           name="typeCarburant"
           value={filters.typeCarburant}
@@ -198,30 +172,19 @@ const Stock = () => {
         </select>
 
         <select
-          name="options"
-          value={filters.options}
+          name="condition"
+          value={filters.couleur}
           onChange={handleFilterChange}
           className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Options</option>
-          <option value="GPS">GPS</option>
-          <option value="Toit ouvrant">Toit ouvrant</option>
-        </select>
-
-        <select
-          name="transmission"
-          value={filters.transmission}
-          onChange={handleFilterChange}
-          className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
-        >
-          <option value="">Transmission</option>
-          {transmissionOptions.map((option) => (
+          <option value="">Condition</option>
+          {couleurOptions.map((option) => (
             <option key={option} value={option}>
               {option}
             </option>
           ))}
         </select>
-
+    
         <select
           name="couleur"
           value={filters.couleur}
@@ -245,23 +208,7 @@ const Stock = () => {
         >
           Clear all
         </button>
-        <button className="text-orange-500 flex items-center">
-          <svg
-            className="w-4 h-4 mr-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
-          More filters
-        </button>
+   
       </div>
 
       {/* Tabs and Search Bar */}

@@ -5,7 +5,7 @@ import { Infinity, Users, CreditCard, ChevronLeft, ChevronRight  } from 'lucide-
 import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
+export default function Welcome({ carss,marks }) {
 
     const [selectedMake, setSelectedMake] = useState('All Makes');
     const [selectedModel, setSelectedModel] = useState('All Models');
@@ -390,12 +390,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         document.getElementById('background')?.classList.add('!hidden');
     };
 
-
+    console.log(carss);
     
 
     return (
         <>
-
             {/* Hero section */}
             <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images')  " }}>
             {/* Overlay for better text visibility */}
@@ -439,8 +438,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     onChange={(e) => setSelectedMake(e.target.value)}
                     className="w-full px-3 py-2 border rounded-md appearance-none bg-white"
                 >
-                    <option>All Makes</option>
-                    {/* Add more make options */}
+                    <option>All Markes</option>
+                    {marks.map((mark) => (
+                        <option key={mark.id} value={mark.name}>
+                            {mark.name}
+                        </option>
+                    ))}
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     

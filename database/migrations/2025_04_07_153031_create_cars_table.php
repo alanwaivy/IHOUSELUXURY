@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->enum('status', ['available', 'rented', 'maintenance']);
+            $table->enum('condition', ['neuf', 'occasion'])
+              ->default('occasion');
+              
             $table->decimal('price', 10, 2);
             $table->string('transmission');
             $table->integer('kilometrage');
