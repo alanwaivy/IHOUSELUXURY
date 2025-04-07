@@ -1,16 +1,18 @@
 <?php
 
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RentalHistory extends Model
+class Rental extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'car_instance_id', 'start_date', 'end_date', 'total_price', 'status'
+        'user_id', 'car_id', 'start_date', 
+        'end_date', 'is_returned'
     ];
 
     public function user()
@@ -18,8 +20,8 @@ class RentalHistory extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function carInstance()
+    public function car()
     {
-        return $this->belongsTo(CarInstance::class);
+        return $this->belongsTo(Car::class);
     }
 }

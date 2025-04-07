@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 
 namespace App\Models;
 
@@ -8,20 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
 {
-    protected $table = 'cars';
     use HasFactory;
 
     protected $fillable = [
-        'car_model_id', 'color', 'kilometrage', 'status', 'quantity'
+        'name', 'status', 'price', 'transmission', 
+        'kilometrage', 'color', 'fuel_type', 'model', 'brand_id'
     ];
 
-    public function carModel()
+    public function brand()
     {
-        return $this->belongsTo(CarModel::class, 'car_model_id');
+        return $this->belongsTo(Brand::class);
     }
 
-    public function rentalHistory()
+    public function rentals()
     {
-        return $this->hasMany(RentalHistory::class);
+        return $this->hasMany(Rental::class);
     }
 }

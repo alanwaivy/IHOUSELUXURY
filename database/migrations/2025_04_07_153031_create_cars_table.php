@@ -9,23 +9,23 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('car_model_id');
-            $table->string('color');
-            $table->integer('kilometrage');
+            $table->string('name');
             $table->enum('status', ['available', 'rented', 'maintenance']);
-            $table->integer('quantity');
+            $table->decimal('price', 10, 2);
+            $table->string('transmission');
+            $table->integer('kilometrage');
+            $table->string('color');
+            $table->string('fuel_type');
+            $table->string('model');
+            $table->foreignId('brand_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
-
-            // Foreign key
-            $table->foreign('car_model_id')->references('id')->on('car_models')->onDelete('cascade');
         });
     }
 
-    
     /**
      * Reverse the migrations.
      */

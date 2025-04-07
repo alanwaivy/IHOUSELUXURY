@@ -9,12 +9,10 @@ class User extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'first_name', 'last_name', 'email', 'phone', 'status'
-    ];
+    protected $fillable = ['first_name', 'last_name', 'status'];
 
-    public function rentalHistory()
+    public function rentals()
     {
-        return $this->hasMany(RentalHistory::class);
+        return $this->hasMany(Rental::class);
     }
 }
