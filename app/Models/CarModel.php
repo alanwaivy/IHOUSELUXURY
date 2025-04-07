@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CarModel extends Model
 {
+    protected $table = 'car_models'; 
     use HasFactory;
 
     protected $fillable = [
@@ -18,9 +19,9 @@ class CarModel extends Model
         return $this->belongsTo(Brand::class);
     }
 
-    public function fuelType()
+    public function fuel()
     {
-        return $this->belongsTo(FuelType::class);
+        return $this->belongsTo(Fuel::class, 'fuel_id');
     }
 
     public function carInstances()

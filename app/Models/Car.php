@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
 {
+    protected $table = 'cars';
     use HasFactory;
 
     protected $fillable = [
@@ -16,7 +17,7 @@ class Car extends Model
 
     public function carModel()
     {
-        return $this->belongsTo(CarModel::class);
+        return $this->belongsTo(CarModel::class, 'car_model_id');
     }
 
     public function rentalHistory()

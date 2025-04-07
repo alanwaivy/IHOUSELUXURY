@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('carModels', function (Blueprint $table) {
+        Schema::create('car_models', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('brand_id');
@@ -22,7 +22,7 @@ return new class extends Migration
 
             // Foreign keys
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
-            $table->foreign('fuel_id')->references('id')->on('fuel')->onDelete('cascade');
+            $table->foreign('fuel_id')->references('id')->on('fuels')->onDelete('cascade');
         }); 
     }
 
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('carModels');
+        Schema::dropIfExists('car_models');
     }
 };
