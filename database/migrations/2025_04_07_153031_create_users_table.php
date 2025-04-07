@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Hash;
 
 return new class extends Migration
 {
@@ -15,7 +16,9 @@ return new class extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->string('email')->unique();
+            $table->string('password')->hashed();
+            $table->enum('role', ['admin', 'user'])->default('user');
             $table->timestamps();
         });
     }

@@ -9,7 +9,7 @@ class User extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['first_name', 'last_name', 'status'];
+    protected $fillable = ['first_name', 'last_name', 'email' ,'user','password'];
 
     public function rentals()
     {
