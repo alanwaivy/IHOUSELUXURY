@@ -403,64 +403,67 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
             {/* Navigation Bar */}
-            <nav className="relative z-10 flex justify-between items-center p-6">
+            <nav className="flex relative z-10 justify-between items-center p-6">
                 <div className="text-white text-2xl font-bold">
-                <span className="text-white">LUXURY</span> <span className="text-orange-500">AUTO</span>
+                    <span className="block sm:inline">LUXURY</span>{' '}
+                    <span className="block sm:inline text-orange-500">AUTO</span>
                 </div>
-                <div className="flex space-x-6 text-white">
-                <a href="#" className="hover:text-orange-500">Accueil</a>
-                <a href="#" className="hover:text-orange-500">Stock</a>
-                <a href="#" className="hover:text-orange-500">Contact</a>
+                <div className="sm:block hidden space-x-6 text-white">
+                    <a href="#" className="hover:text-orange-500">Accueil</a>
+                    <a href="#" className="hover:text-orange-500">Stock</a>
+                    <a href="#" className="hover:text-orange-500">Contact</a>
                 </div>
-                <div className="flex space-x-4 text-white">
-                <Link href={route('login')} className="flex items-center space-x-1 hover:text-orange-500">
-                    <FaUser />
-                    <span>Login</span>
-                </Link>
-                <Link href={route('register')} className="flex items-center space-x-1 hover:text-orange-500">
-                    <FaUserPlus />
-                    <span>Register</span>
-                </Link>
+                <div className="sm:block hidden space-x-4 text-white">
+                    <Link href={route('login')} className="flex items-center space-x-1 hover:text-orange-500">
+                        <FaUser />
+                        <span>Login</span>
+                    </Link>
+                    <Link href={route('register')} className="flex items-center space-x-1 hover:text-orange-500">
+                        <FaUserPlus />
+                        <span>Register</span>
+                    </Link>
                 </div>
             </nav>
 
             {/* Hero Content */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="text-5xl md:text-6xl font-bold mb-8">
-                TROUVER VOTRE <span className="text-orange-500">VÉHICULE</span>
-                </h1>
+                <div className='pr-7'>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-8">
+                    TROUVER <span className='block sm:inline'>VOTRE</span> <span className="text-orange-500">VÉHICULE</span>
+                    </h1>
+                </div>
 
                 {/* Search Filters */}
-            <div className="flex  text-black justify-center space-x-4 px-4 py-2">
-                {/* Make Dropdown */}
-                <div className="relative w-60">
-                <select 
-                    value={selectedMake}
-                    onChange={(e) => setSelectedMake(e.target.value)}
-                    className="w-full px-3 py-2 border rounded-md appearance-none bg-white"
-                >
-                    <option>All Makes</option>
-                    {/* Add more make options */}
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                    
-                </div>
-                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-4 px-4 py-2 text-black">
+                    {/* Make Dropdown */}
+                    <div className="relative w-60">
+                        <select 
+                            value={selectedMake}
+                            onChange={(e) => setSelectedMake(e.target.value)}
+                            className="w-full px-3 py-2 border rounded-md appearance-none bg-white"
+                        >
+                            <option>All Makes</option>
+                            {/* Add more make options */}
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            
+                        </div>
+                    </div>
 
                 {/* Model Dropdown */}
-                <div className="relative w-60">
-                <select 
-                    value={selectedModel}
-                    onChange={(e) => setSelectedModel(e.target.value)}
-                    className="w-full px-3 py-2 border rounded-md appearance-none bg-white"
-                >
-                    <option>All Models</option>
-                    {/* Add more model options */}
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                    
-                </div>
-                </div>
+                    <div className="relative w-60">
+                        <select 
+                            value={selectedModel}
+                            onChange={(e) => setSelectedModel(e.target.value)}
+                            className="w-full px-3 py-2 border rounded-md appearance-none bg-white"
+                        >
+                            <option>All Models</option>
+                            {/* Add more model options */}
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            
+                        </div>
+                    </div>
 
                 {/* Max Price Dropdown */}
                 <div className="relative w-60">
@@ -478,14 +481,14 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
 
                 {/* Search Button */}
-                <button className="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <button className="flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <span className="font-bold pl-10">Chercher</span>
                 </button>
-            </div>
-            
 
+                </div>
 
             </div>
             </div>
