@@ -14,7 +14,7 @@ export default function GuestLayout({ children }) {
                 <div className="absolute inset-0 bg-grey/30 backdrop-blur-lg"></div>
 
                 {/* Content (Ensuring it is on top) */}
-                <div className="relative z-10 w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+                <div className="relative z-10 w-full max-w-md p-6 mx-4 sm:p-6 bg-white rounded-lg shadow-md">
                     <div className="flex justify-center mb-4">
                         <Link href="/">
                             <ApplicationLogo className="h-20 w-20 text-gray-500" />
