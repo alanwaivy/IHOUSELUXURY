@@ -117,11 +117,11 @@ const Stock = () => {
           name="marque"
           value={filters.marque}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Marque</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Marque</option>
           {marqueOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
   
@@ -129,23 +129,23 @@ const Stock = () => {
           name="modele"
           value={filters.modele}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Modèle</option>
-          <option value="G63">G63</option>
-          <option value="BENTAYGA S">BENTAYGA S</option>
-          <option value="911 Carrera">911 Carrera</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Modèle</option>
+          <option value="G63" className="bg-[#131929] text-[rgb(106,108,111)]">G63</option>
+          <option value="BENTAYGA S" className="bg-[#131929] text-[rgb(106,108,111)]">BENTAYGA S</option>
+          <option value="911 Carrera" className="bg-[#131929] text-[rgb(106,108,111)]">911 Carrera</option>
         </select>
   
         <select
           name="condition"
           value={filters.condition}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Condition</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Condition</option>
           {conditionOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
     
@@ -153,11 +153,11 @@ const Stock = () => {
           name="transmission"
           value={filters.transmission}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Transmission</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Transmission</option>
           {transmissionOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
   
@@ -165,11 +165,11 @@ const Stock = () => {
           name="driveType"
           value={filters.driveType}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Type de transmission</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Type de transmission</option>
           {driveTypeOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
   
@@ -177,11 +177,11 @@ const Stock = () => {
           name="typeCarburant"
           value={filters.typeCarburant}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Type carburant</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Type carburant</option>
           {typeCarburantOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
   
@@ -189,74 +189,75 @@ const Stock = () => {
           name="couleur"
           value={filters.couleur}
           onChange={handleFilterChange}
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
-          <option value="">Couleur</option>
+          <option value="" className="bg-[#131929] text-[rgb(106,108,111)]">Couleur</option>
           {couleurOptions.map((option) => (
-            <option key={option} value={option}>{option}</option>
+            <option key={option} value={option} className="bg-[#131929] text-[rgb(106,108,111)]">{option}</option>
           ))}
         </select>
-  
+    
         <input
           type="text"
           name="kilometrage"
           value={filters.kilometrage}
           onChange={handleFilterChange}
           placeholder="Kilométrage"
-          className="bg-gray-900 border border-gray-700 rounded-lg p-2 text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg p-2 text-[rgb(106,108,111)] placeholder-[rgb(106,108,111)] focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
       </div>
   
       {/* Clear All - Right-aligned on mobile too */}
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={clearFilters}
+      <div className="flex justify-end mb-4">
+        <button
+          onClick={clearFilters}
             className="text-gray-400 hover:text-orange-500"
-          >
-            Clear all
-          </button>
-        </div>
+        >
+          Clear all
+        </button>
+      </div>
   
-        {/* Tabs and Search Bar - Responsive layout */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 space-y-4 sm:space-y-0">
-          {/* Tabs - Scrollable on small screens */}
-          <div className="flex space-x-4 overflow-x-auto pb-2 w-full sm:w-auto">
-            <button
-              onClick={() => handleTabChange('Tout')}
-              className={`${
-                activeTab === 'Tout' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-400'
-              } pb-2 whitespace-nowrap`}
-            >
+      {/* Tabs and Search Bar - Responsive layout */}
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 space-y-4 sm:space-y-0">
+        {/* Tabs - Scrollable on small screens */}
+        <div className="flex space-x-4 overflow-x-auto pb-2 w-full sm:w-auto">
+          <button
+            onClick={() => handleTabChange('Tout')}
+            className={`${
+              activeTab === 'Tout' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-400'
+            } pb-2 whitespace-nowrap`}
+          >
               Tout (3)
-            </button>
-            <button
-              onClick={() => handleTabChange('Neuf')}
-              className={`${
-                activeTab === 'Neuf' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-400'
-              } pb-2 whitespace-nowrap`}
-            >
+          </button>
+          <button
+            onClick={() => handleTabChange('Neuf')}
+            className={`${
+              activeTab === 'Neuf' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-400'
+            } pb-2 whitespace-nowrap`}
+          >
               Neuf (3)
-            </button>
+          </button>
           </div>
         </div>
       </div>
   
-      {/* Updated Car Grid with actual car information */}
+      {/* Updated Car Grid with consistent heights and better image presentation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Porsche 911 */}
-        <div className="bg-gray-900 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
-          <div className="h-48 overflow-hidden">
+        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
+          <div className="relative h-48 overflow-hidden">
             <img 
               src="/images/cars/luxury/1Untitled.jpg" 
               alt="Porsche 911" 
-              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-125"
+              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#131929] to-transparent opacity-50"></div>
           </div>
-          <div className="p-4">
-            <h3 className="text-xl font-bold">PORSCHE 911 CARRERA</h3>
-            <p className="text-gray-400">2025 • Cabriolet • Essence</p>
-            <div className="mt-2 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+          <div className="p-4 flex flex-col flex-grow">
+            <h3 className="text-xl font-bold mb-2">PORSCHE 911 CARRERA</h3>
+            <p className="text-gray-400 mb-4">2025 • Cabriolet • Essence</p>
+            <div className="mt-auto flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span className="text-orange-500 font-bold">Contactez-nous</span>
               <button className="bg-orange-600 text-white px-4 py-2 rounded w-full sm:w-auto hover:bg-orange-700 transition-colors">Details</button>
             </div>
@@ -264,18 +265,19 @@ const Stock = () => {
         </div>
   
         {/* Bentley Bentayga */}
-        <div className="bg-gray-900 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
-          <div className="h-48 overflow-hidden">
+        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
+          <div className="relative h-48 overflow-hidden">
             <img 
               src="/images/cars/luxury/2Untitled.jpg" 
               alt="Bentley Bentayga" 
-              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-125"
+              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#131929] to-transparent opacity-50"></div>
           </div>
-          <div className="p-4">
-            <h3 className="text-xl font-bold">BENTLEY BENTAYGA S E-HYBRIDE</h3>
-            <p className="text-gray-400">2025 • SUV • Hybrid</p>
-            <div className="mt-2 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+          <div className="p-4 flex flex-col flex-grow">
+            <h3 className="text-xl font-bold mb-2">BENTLEY BENTAYGA S E-HYBRIDE</h3>
+            <p className="text-gray-400 mb-4">2025 • SUV • Hybrid</p>
+            <div className="mt-auto flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span className="text-orange-500 font-bold">Contactez-nous</span>
               <button className="bg-orange-600 text-white px-4 py-2 rounded w-full sm:w-auto hover:bg-orange-700 transition-colors">Details</button>
             </div>
@@ -283,18 +285,19 @@ const Stock = () => {
         </div>
   
         {/* Mercedes-Benz G63 AMG */}
-        <div className="bg-gray-900 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
-          <div className="h-48 overflow-hidden">
+        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
+          <div className="relative h-48 overflow-hidden">
             <img 
               src="/images/cars/luxury/3Untitled.jpg" 
               alt="Mercedes-Benz G63 AMG" 
-              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-125"
+              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#131929] to-transparent opacity-50"></div>
           </div>
-          <div className="p-4">
-            <h3 className="text-xl font-bold">MERCEDES-BENZ G 63 AMG</h3>
-            <p className="text-gray-400">2025 • SUV • Essence</p>
-            <div className="mt-2 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+          <div className="p-4 flex flex-col flex-grow">
+            <h3 className="text-xl font-bold mb-2">MERCEDES-BENZ G 63 AMG</h3>
+            <p className="text-gray-400 mb-4">2025 • SUV • Essence</p>
+            <div className="mt-auto flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span className="text-orange-500 font-bold">Contactez-nous</span>
               <button className="bg-orange-600 text-white px-4 py-2 rounded w-full sm:w-auto hover:bg-orange-700 transition-colors">Details</button>
             </div>
