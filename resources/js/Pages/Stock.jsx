@@ -245,28 +245,30 @@ const Stock = () => {
       {/* Updated Car Grid with consistent heights and better image presentation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Porsche 911 */}
-        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
-          <div className="relative h-48 overflow-hidden">
-            <img 
-              src="/images/cars/luxury/1Untitled.jpg" 
-              alt="Porsche 911" 
-              className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#131929] to-transparent opacity-50"></div>
-          </div>
-          <div className="p-4 flex flex-col flex-grow">
-            <h3 className="text-xl font-bold mb-2">PORSCHE 911 CARRERA</h3>
-            <p className="text-gray-400 mb-4">2025 • Cabriolet • Essence</p>
-            <div className="mt-auto flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
-              <span className="text-orange-500 font-bold">Contactez-nous</span>
-              <button className="bg-orange-600 text-white px-4 py-2 rounded w-full sm:w-auto hover:bg-orange-700 transition-colors">Details</button>
+        <Link href="/cars/porsche-911-carrera" className="block">
+          <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-[400px]">
+            <div className="relative h-64 overflow-hidden">
+              <img 
+                src="/images/cars/luxury/1Untitled.jpg" 
+                alt="Porsche 911" 
+                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#131929] to-transparent opacity-50"></div>
+            </div>
+            <div className="p-4 flex flex-col flex-grow">
+              <h3 className="text-xl font-bold mb-2">PORSCHE 911 CARRERA</h3>
+              <p className="text-gray-400 mb-4">2025 • Cabriolet • Essence</p>
+              <div className="mt-auto flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+                <span className="text-orange-500 font-bold">Contactez-nous</span>
+                <button className="bg-orange-600 text-white px-4 py-2 rounded w-full sm:w-auto hover:bg-orange-700 transition-colors">Details</button>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
   
         {/* Bentley Bentayga */}
-        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
-          <div className="relative h-48 overflow-hidden">
+        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-[400px]">
+          <div className="relative h-64 overflow-hidden">
             <img 
               src="/images/cars/luxury/2Untitled.jpg" 
               alt="Bentley Bentayga" 
@@ -285,8 +287,8 @@ const Stock = () => {
         </div>
   
         {/* Mercedes-Benz G63 AMG */}
-        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-full">
-          <div className="relative h-48 overflow-hidden">
+        <div className="bg-[#131929] rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex flex-col h-[400px]">
+          <div className="relative h-64 overflow-hidden">
             <img 
               src="/images/cars/luxury/3Untitled.jpg" 
               alt="Mercedes-Benz G63 AMG" 

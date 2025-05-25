@@ -48,4 +48,29 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/brands/{brand}', [BrandController::class, 'destroy']);
 });
 
+Route::get('/cars/{slug}', function ($slug) {
+    return Inertia::render('CarDetails', [
+        'car' => [
+            'id' => 1,
+            'name' => 'PORSCHE 911 CARRERA',
+            'year' => '2025',
+            'type' => 'Cabriolet',
+            'fuel' => 'Essence',
+            'transmission' => 'Automatic',
+            'condition' => 'Neuf',
+            'mileage' => '0 Km',
+            'doors' => '2-door',
+            'cylinders' => '6',
+            'color' => 'Grey',
+            'images' => [
+                '/images/cars/luxury/1Untitled.jpg',
+                '/images/cars/luxury/2Untitled.jpg',
+                '/images/cars/luxury/3Untitled.jpg',
+                '/images/cars/luxury/4Untitled.jpg',
+                '/images/cars/luxury/5Untitled.jpg',
+            ]
+        ]
+    ]);
+})->name('car.details');
+
 require __DIR__.'/auth.php';
