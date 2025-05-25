@@ -68,7 +68,7 @@ const Stock = () => {
 
     <>
     {/* Navigation Bar - Responsive */}
-    <nav className="relative z-10 flex flex-col md:flex-row justify-between items-center p-4 md:p-6 bg-gray-950">
+    <nav className="relative z-10 flex flex-col md:flex-row justify-between items-center p-4 md:p-6 bg-[#0a0a0a]">
       <div className="text-white text-2xl font-bold mb-4 md:mb-0">
         <span className="text-orange-500">I</span>
         <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
@@ -103,7 +103,7 @@ const Stock = () => {
       </div>
     </nav>
     
-    <div className="bg-gray-950 text-white p-4 min-h-screen">
+    <div className="bg-[#0a0a0a] text-white p-4 min-h-screen">
       {/* Breadcrumb */}
       <div className="text-sm mb-4">
         <span className="text-gray-400">Homepage</span>

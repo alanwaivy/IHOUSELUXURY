@@ -335,7 +335,8 @@ export default function Welcome({ }) {
           {/* Navigation Bar */}
           <nav className="relative z-10 flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
             <div className="text-white text-2xl font-bold mb-4 md:mb-0">
-              <span className="text-white">LUXURY</span> <span className="text-orange-500">AUTO</span>
+              <span className="text-orange-500">I</span>
+              <span className="text-white">HOUSE</span> <span className="text-orange-500">LUXURY</span>
             </div>
             
             {/* Mobile Menu Button - Visible on small screens */}
@@ -425,7 +426,7 @@ export default function Welcome({ }) {
         </div>
       
         {/* Main section for new cars */}
-        <div className="bg-gray-900 text-white p-4 md:p-6">
+        <div className="bg-[#0a0a0a] text-white p-4 md:p-6">
           {/* Header section with title and filter buttons */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 space-y-4 sm:space-y-0">
             <div>
@@ -456,7 +457,7 @@ export default function Welcome({ }) {
               <div 
                 key={car.id} 
                 className={`
-                  bg-gray-800 rounded-lg overflow-hidden shadow-lg 
+                  bg-[#0a0a0a] rounded-lg overflow-hidden shadow-lg 
                   transform transition-transform duration-300 hover:scale-105
                   ${car.mainListing ? 'col-span-1 sm:col-span-2 row-span-1 md:row-span-2' : ''}
                 `}
@@ -491,7 +492,7 @@ export default function Welcome({ }) {
           {/* Optional: Modal for car details */}
           {selectedCar && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-              <div className="bg-gray-800 p-4 md:p-8 rounded-lg w-full max-w-2xl">
+              <div className="bg-[#0a0a0a] p-4 md:p-8 rounded-lg w-full max-w-2xl">
                 <h2 className="text-xl md:text-2xl font-bold mb-4">{selectedCar.brand} {selectedCar.model}</h2>
                 <button 
                   onClick={() => setSelectedCar(null)} 
@@ -506,7 +507,7 @@ export default function Welcome({ }) {
         </div>
       
         {/* Why use Luxury Auto section */}
-        <div className="bg-gray-900 text-white py-8 md:py-16">
+        <div className="bg-[#0a0a0a] text-white py-8 md:py-16">
           {/* Responsive container with max width */}
           <div className="container mx-auto px-4">
             {/* Section title */}
@@ -530,7 +531,7 @@ export default function Welcome({ }) {
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-all duration-300 group"
+                  className="bg-[#0a0a0a] p-6 rounded-lg text-center hover:bg-gray-900 transition-all duration-300 group"
                 >
                   {/* Centered icon with background */}
                   <div className="flex justify-center mb-4">
@@ -560,7 +561,7 @@ export default function Welcome({ }) {
         </div>
       
         {/* Best sales section */}
-        <div className="bg-gray-900 text-white p-4 md:p-6">
+        <div className="bg-[#0a0a0a] text-white p-4 md:p-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
             <h2 className="text-3xl md:text-4xl font-bold">Nos Véhicules</h2>
           </div>
@@ -592,7 +593,7 @@ export default function Welcome({ }) {
                     key={car.id} 
                     className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 flex-shrink-0"
                   >
-                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div className="bg-[#0a0a0a] rounded-lg overflow-hidden shadow-lg">
                       <div className="relative">
                         <img 
                           src={car.imageUrl} 
@@ -637,7 +638,7 @@ export default function Welcome({ }) {
         </div>
       
         {/* Marques Section */}
-        <div className="bg-gray-900 py-8">
+        <div className="bg-[#0a0a0a] py-8">
           <h2 className="text-center text-white text-2xl md:text-3xl font-bold mb-6">Nos Marques</h2>
           <div className="relative max-w-5xl mx-auto px-4">
             {/* Previous Button */}
@@ -698,7 +699,7 @@ export default function Welcome({ }) {
         </div>
       
         {/* Footer Section */}      
-        <footer className="w-full pt-10 md:pt-20 bg-gray-900 text-white py-8">
+        <footer className="w-full pt-10 md:pt-20 bg-[#0a0a0a] text-white py-8">
           <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
             {/* Description */}
             <div>

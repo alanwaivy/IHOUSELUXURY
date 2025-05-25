@@ -1,4 +1,3 @@
-
 import React, {useState,useEffect,useRef} from 'react';
 import { Head, Link } from '@inertiajs/react';
 import { FaUser, FaUserPlus } from 'react-icons/fa';
@@ -89,7 +88,7 @@ export default function Contact({ auth, laravelVersion, phpVersion }) {
           </div>
         </nav>
 
-    <div className="bg-[#131929] min-h-screen text-white">
+    <div className="bg-[#0a0a0a] min-h-screen text-white">
         <div className="container mx-auto px-4 py-8 lg:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 {/* Contact Form */}
@@ -161,7 +160,7 @@ export default function Contact({ auth, laravelVersion, phpVersion }) {
                     </p>
                     
                     <div className="space-y-4 mb-8">
-                        <div className="flex items-center space-x-4 p-3 bg-[#131929]/30 rounded-xl backdrop-blur-lg">
+                        <div className="flex items-center space-x-4 p-3 bg-[#0a0a0a]/30 rounded-xl backdrop-blur-lg">
                             <div className="text-orange-500 bg-orange-500/10 p-2 rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h3m-3-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -170,7 +169,7 @@ export default function Contact({ auth, laravelVersion, phpVersion }) {
                             <span className="text-sm sm:text-base md:text-lg">+212 661 21 23 19</span>
                         </div>
                         
-                        <div className="flex items-center space-x-4 p-3 bg-[#131929]/30 rounded-xl backdrop-blur-lg">
+                        <div className="flex items-center space-x-4 p-3 bg-[#0a0a0a]/30 rounded-xl backdrop-blur-lg">
                             <div className="text-orange-500 bg-orange-500/10 p-2 rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -179,7 +178,7 @@ export default function Contact({ auth, laravelVersion, phpVersion }) {
                             <span className="text-sm sm:text-base md:text-lg">info@luxuryauto.ma</span>
                         </div>
                         
-                        <div className="flex items-center space-x-4 p-3 bg-[#131929]/30 rounded-xl backdrop-blur-lg">
+                        <div className="flex items-center space-x-4 p-3 bg-[#0a0a0a]/30 rounded-xl backdrop-blur-lg">
                             <div className="text-orange-500 bg-orange-500/10 p-2 rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -195,7 +194,7 @@ export default function Contact({ auth, laravelVersion, phpVersion }) {
                             <a 
                                 key={index} 
                                 href="#" 
-                                className="text-gray-400 hover:text-orange-500 transition-all duration-300 p-2 rounded-xl border border-gray-700/50 hover:border-orange-500 bg-[#131929]/30 backdrop-blur-lg transform hover:scale-110"
+                                className="text-gray-400 hover:text-orange-500 transition-all duration-300 p-2 rounded-xl border border-gray-700/50 hover:border-orange-500 bg-[#0a0a0a]/30 backdrop-blur-lg transform hover:scale-110"
                             >
                                 <Icon className="h-4 w-4" />
                             </a>

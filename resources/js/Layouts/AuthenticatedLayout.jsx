@@ -5,9 +5,9 @@ export default function AuthenticatedLayout({ header, children }) {
     const user = usePage().props.auth.user;
 
     return (
-        <div className="min-h-screen bg-[#131929]">
+        <div className="min-h-screen bg-[#0a0a0a]">
             {/* Simple header with user info and logout */}
-            <div className="bg-gray-900 shadow">
+            <div className="bg-[#0a0a0a] shadow">
                 <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
                         <div className="text-white text-2xl font-bold">
@@ -29,7 +29,7 @@ export default function AuthenticatedLayout({ header, children }) {
             </div>
 
             {header && (
-                <header className="bg-gray-900 shadow">
+                <header className="bg-[#0a0a0a] shadow">
                     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                         <div className="text-xl font-semibold text-white">
                             {header}
