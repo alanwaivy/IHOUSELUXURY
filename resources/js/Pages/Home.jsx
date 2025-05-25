@@ -21,65 +21,80 @@ export default function Welcome({ }) {
         Neuf: [
         {
             id: 1,
-            brand: 'BENTLEY',
-            model: 'BENTAYGA S E-HYBRIDE',
+            brand: 'Luxury',
+            model: 'Car 1',
             type: 'Importée Neuve',
-            year: 2025,
+            year: '2024',
             kilometers: '0 Km',
             transmission: 'Automatic',
-            drivetrain: 'Hybrid',
+            drivetrain: 'AWD',
             price: 'Contactez-nous',
-            imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images',
+            imageUrl: '/images/cars/luxury/1Untitled.jpg',
             mainListing: true
         },
         {
             id: 2,
-            brand: 'Mercedes-Benz',
-            model: 'GLE 350de',
-            type: 'Importée',
-            year: 2025,
+            brand: 'Luxury',
+            model: 'Car 2',
+            type: 'Importée Neuve',
+            year: '2024',
             kilometers: '0 Km',
             transmission: 'Automatic',
-            drivetrain: 'Hybrid',
+            drivetrain: 'AWD',
             price: 'Contactez-nous',
-            imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images'
+            imageUrl: '/images/cars/luxury/2Untitled.jpg'
         },
         {
             id: 3,
-            brand: 'BENTLEY',
-            model: 'Continental GT Speed hybrid',
-            year: 2025,
+            brand: 'Luxury',
+            model: 'Car 3',
+            type: 'Importée Neuve',
+            year: '2024',
             kilometers: '0 Km',
             transmission: 'Automatic',
-            drivetrain: 'Hybrid',
+            drivetrain: 'AWD',
             price: 'Contactez-nous',
-            imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images'
+            imageUrl: '/images/cars/luxury/3Untitled.jpg'
         },
         {
             id: 4,
-            brand: 'Mercedes-Benz',
-            model: 'GLC 300de',
-            type: 'Importée',
-            year: 2025,
+            brand: 'Luxury',
+            model: 'Car 4',
+            type: 'Importée Neuve',
+            year: '2024',
             kilometers: '0 Km',
             transmission: 'Automatic',
-            drivetrain: 'Hybrid',
+            drivetrain: 'AWD',
             price: 'Contactez-nous',
-            imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images'
-        },
-        {
-            id: 5,
-            brand: 'Porsche',
-            model: 'Cayenne Coupé Pack Sport',
-            year: 2025,
-            kilometers: '0 Km',
-            transmission: 'Automatic',
-            drivetrain: 'Hybrid',
-            price: 'Contactez-nous',
-            imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images'
+            imageUrl: '/images/cars/luxury/Untitled.jpg'
         }
         ],
-        Occasion: [] // You can populate this with used car data
+        Occasion: [
+        {
+            id: 5,
+            brand: 'Luxury',
+            model: 'Car 5',
+            type: 'Occasion',
+            year: '2023',
+            kilometers: '15,000 Km',
+            transmission: 'Automatic',
+            drivetrain: 'AWD',
+            price: 'Contactez-nous',
+            imageUrl: '/images/cars/luxury/1Untitled.jpg'
+        },
+        {
+            id: 6,
+            brand: 'Luxury',
+            model: 'Car 6',
+            type: 'Occasion',
+            year: '2023',
+            kilometers: '12,000 Km',
+            transmission: 'Automatic',
+            drivetrain: 'AWD',
+            price: 'Contactez-nous',
+            imageUrl: '/images/cars/luxury/2Untitled.jpg'
+        }
+        ]
     };
 
 
@@ -120,172 +135,88 @@ export default function Welcome({ }) {
 
     // Brand data
     const brands = {
-        Audi: [
-        {
-            id: 1,
-            model: "Q8 FACELIFT 2025",
-            type: "Importée",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images",
-        },
-        {
-            id: 2,
-            model: "RSQ8 2021",
-            type: "Importée Neuve",
-            year: 2021,
-            kilometers: "35.000 Km",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images",
-        },
-        {
-            id: 3,
-            model: "Q8 FACELIFT",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images",
-        },
-        {
-            id: 4,
-            model: "Q8 FACELIFT",
-            type: "Importée Neuve",
-            year: 2024,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Diesel",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images",
-        },
-        ],
-        BMW: [
-        {
-            id: 1,
-            model: "X6 M Competition",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Petrol",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://www.bmwusa.com/content/dam/bmwusa/X6/2025/BMW-MY25-X6-Hero-Desktop.png",
-        },
-        {
-            id: 2,
-            model: "iX M60",
-            type: "Importée",
-            year: 2024,
-            kilometers: "10.000 Km",
-            transmission: "Automatic",
-            fuel: "Electric",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://www.bmwusa.com/content/dam/bmwusa/iX/2025/BMW-MY25-iX-Hero-Desktop.png",
-        },
-        {
-            id: 3,
-            model: "X5 xDrive40e",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Hybrid",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://www.bmwusa.com/content/dam/bmwusa/X5/2025/BMW-MY25-X5-Hero-Desktop.png",
-        },
-        ],
-        Cadillac: [
-        {
-            id: 1,
-            model: "Escalade IQ",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Electric",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://www.cadillac.com/content/dam/cadillac/na/us/en/index/electric/escalade-iq/01-images/2025-escalade-iq-hero.jpg",
-        },
-        {
-            id: 2,
-            model: "Lyriq Sport",
-            type: "Importée",
-            year: 2024,
-            kilometers: "5.000 Km",
-            transmission: "Automatic",
-            fuel: "Electric",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://www.cadillac.com/content/dam/cadillac/na/us/en/index/electric/lyriq/01-images/2025-lyriq-hero.jpg",
-        },
-        ],
-        Ferrari: [
-        {
-            id: 1,
-            model: "Purosangue",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Petrol",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://cdn.ferrari.com/cms/network/media/img/resize/62a3c0b1b6d7e672d5e4c4a2-purosangue-hero-desktop?",
-        },
-        {
-            id: 2,
-            model: "F80",
-            type: "Importée Neuve",
-            year: 2025,
-            kilometers: "0 Km",
-            transmission: "Automatic",
-            fuel: "Hybrid",
-            price: "Contactez-nous",
-            imageUrl:
-            "https://cdn.ferrari.com/cms/network/media/img/resize/66f7b8b8b1d2e62b5e4c4a2-f80-hero-desktop?",
-        },
-        ],
+        'Luxury Cars': [
+            {
+                id: 1,
+                model: "Luxury Car 1",
+                type: "Importée Neuve",
+                year: 2024,
+                kilometers: "0 Km",
+                transmission: "Automatic",
+                fuel: "Petrol",
+                price: "Contactez-nous",
+                imageUrl: "/images/cars/luxury/1Untitled.jpg",
+            },
+            {
+                id: 2,
+                model: "Luxury Car 2",
+                type: "Importée",
+                year: 2024,
+                kilometers: "0 Km",
+                transmission: "Automatic",
+                fuel: "Petrol",
+                price: "Contactez-nous",
+                imageUrl: "/images/cars/luxury/2Untitled.jpg",
+            },
+            {
+                id: 3,
+                model: "Luxury Car 3",
+                type: "Importée Neuve",
+                year: 2024,
+                kilometers: "0 Km",
+                transmission: "Automatic",
+                fuel: "Petrol",
+                price: "Contactez-nous",
+                imageUrl: "/images/cars/luxury/3Untitled.jpg",
+            },
+            {
+                id: 4,
+                model: "Luxury Car 4",
+                type: "Importée Neuve",
+                year: 2024,
+                kilometers: "0 Km",
+                transmission: "Automatic",
+                fuel: "Petrol",
+                price: "Contactez-nous",
+                imageUrl: "/images/cars/luxury/Untitled.jpg",
+            },
+        ]
     };
 
     // Active brand state
-    const [activeBrand, setActiveBrand] = useState('Audi');
+    const [activeBrand, setActiveBrand] = useState('Luxury Cars');
 
     // Slide navigation functions
     const nextSlide = () => {
-        if (currentSlide < brands[activeBrand].length - 4) {
-            setCurrentSlide(currentSlide + 1);
+        const maxSlides = brands[activeBrand].length - (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 1);
+        if (currentSlide < maxSlides) {
+            setCurrentSlide(prev => prev + 1);
         }
     };
 
     const prevSlide = () => {
         if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 1);
+            setCurrentSlide(prev => prev - 1);
         }
     };
 
-    // Automatic sliding effect
+    // Update slider position when currentSlide changes
     useEffect(() => {
-        const slider = sliderRef.current;
-        if (slider) {
-            slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+        if (sliderRef.current) {
+            const slideWidth = 100 / (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 1);
+            sliderRef.current.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
         }
     }, [currentSlide]);
-     
+
+    // Update slider on window resize
+    useEffect(() => {
+        const handleResize = () => {
+            setCurrentSlide(0); // Reset to first slide on resize
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // State and logic for each brand's carousel
     const brandCarousels = Object.keys(brands).reduce((acc, brandName) => {
@@ -319,24 +250,24 @@ export default function Welcome({ }) {
 
 
     // Brand logo data
-  const brandLogos = [
-    {
-      name: "Mercedes-Benz",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg",
-    },
-    {
-      name: "Porsche",
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/1f/Porsche_logo.svg",
-    },
-    {
-      name: "BMW",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
-    },
-    {
-      name: "Bentley",
-      logo: "https://upload.wikimedia.org/wikipedia/en/7/7e/Bentley_logo.svg",
-    },
-  ];
+    const brandLogos = [
+        {
+          name: "Mercedes-Benz",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg",
+        },
+        {
+          name: "Porsche",
+          logo: "https://static.cdnlogo.com/logos/p/63/porsche.svg",
+        },
+        {
+          name: "BMW",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+        },
+        {
+          name: "Bentley",
+          logo: "https://download.logo.wine/logo/Bentley/Bentley-Logo.wine.png",
+        },
+    ];
   
     // State and logic for the carousel 2
     const carouselRef = useRef();
@@ -397,7 +328,7 @@ export default function Welcome({ }) {
     return (
         <>
         {/* Hero section */}
-        <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.hdnux.com%2Fphotos%2F26%2F26%2F14%2F5858093%2F6%2FrawImage.jpg&f=1&nofb=1&ipt=6df8d6189bb0b53ebbcddcce7e72308cb95e44bf4c7805d006382cecf9ea3d36&ipo=images')  " }}>
+        <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/cars/luxury/Untitled.jpg')" }}>
           {/* Overlay for better text visibility */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       
@@ -631,65 +562,49 @@ export default function Welcome({ }) {
         {/* Best sales section */}
         <div className="bg-gray-900 text-white p-4 md:p-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
-            <h2 className="text-3xl md:text-4xl font-bold">Marques populaires</h2>
-            
-            {/* Brand selection buttons - Scrollable on mobile */}
-            <div className="flex overflow-x-auto pb-2 space-x-4 w-full md:w-auto">
-              {Object.keys(brands).map((brand) => (
-                <button
-                  key={brand}
-                  onClick={() => {
-                    setActiveBrand(brand);
-                    setCurrentSlide(0);
-                  }}
-                  className={`
-                    px-4 py-2 rounded-md transition-colors duration-300 whitespace-nowrap
-                    ${activeBrand === brand 
-                      ? 'bg-orange-600 text-white' 
-                      : 'text-gray-400 hover:text-white hover:bg-gray-700'}
-                  `}
-                >
-                  {brand} 
-                  <span className="ml-2 text-sm bg-gray-700 px-2 rounded">
-                    {brands[brand].length} Listings
-                  </span>
-                </button>
-              ))}
-            </div>
+            <h2 className="text-3xl md:text-4xl font-bold">Nos Véhicules</h2>
           </div>
           
           {/* Slider container */}
           <div className="relative overflow-hidden">
+            {/* Previous button */}
+            <button
+              onClick={prevSlide}
+              className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 p-2 rounded-r ${
+                currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : 'opacity-100 hover:bg-opacity-75'
+              }`}
+              disabled={currentSlide === 0}
+            >
+              <ChevronLeft className="w-6 h-6 text-white" />
+            </button>
+
             {/* Slider wrapper */}
             <div className="overflow-hidden">
               <div 
                 ref={sliderRef}
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ 
-                  width: `${brands[activeBrand].length * 100}%`,
-                  transform: `translateX(-${currentSlide * (100 / brands[activeBrand].length)}%)`
+                  width: `${brands['Luxury Cars'].length * (100 / (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 1))}%`
                 }}
               >
-                {brands[activeBrand].map((car) => (
+                {brands['Luxury Cars'].map((car) => (
                   <div 
                     key={car.id} 
                     className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 flex-shrink-0"
                   >
                     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                      <Link>
-                        <div className="relative">
-                          <img 
-                            src={car.imageUrl} 
-                            alt={`${activeBrand} ${car.model}`} 
-                            className="w-full h-48 object-cover"
-                          />
-                          <div className="absolute top-4 left-4 bg-orange-600 text-white px-2 py-1 rounded-md text-sm">
-                            {car.year}
-                          </div>
+                      <div className="relative">
+                        <img 
+                          src={car.imageUrl} 
+                          alt={car.model}
+                          className="w-full h-48 object-cover"
+                        />
+                        <div className="absolute top-4 left-4 bg-orange-600 text-white px-2 py-1 rounded-md text-sm">
+                          {car.year}
                         </div>
-                      </Link>
+                      </div>
                       <div className="p-4">
-                        <h3 className="text-xl font-semibold">{activeBrand} {car.model}</h3>
+                        <h3 className="text-xl font-semibold">{car.model}</h3>
                         <p className="text-gray-400 text-sm">{car.type}</p>
                         <div className="mt-2 text-sm text-gray-300">
                           <span>{car.kilometers}</span> • 
@@ -705,34 +620,18 @@ export default function Welcome({ }) {
                 ))}
               </div>
             </div>
-          </div>
-      
-          {/* Navigation buttons and View all button container */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mt-6 px-4 md:mx-14 space-y-4 sm:space-y-0">
-            <div className="flex space-x-4">
-              <button 
-                onClick={prevSlide} 
-                className={`
-                  bg-gray-800 p-2 rounded-full shadow-lg
-                  ${currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}
-                `}
-                disabled={currentSlide === 0}
-              >
-                <ChevronLeft />
-              </button>
-              <button 
-                onClick={nextSlide} 
-                className={`
-                  bg-gray-800 p-2 rounded-full shadow-lg
-                  ${currentSlide === brands[activeBrand].length - (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : window.innerWidth >= 640 ? 2 : 1) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}
-                `}
-                disabled={currentSlide === brands[activeBrand].length - (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : window.innerWidth >= 640 ? 2 : 1)}
-              >
-                <ChevronRight />
-              </button>
-            </div>
-            <button className="bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors w-full sm:w-auto">
-              Voir {brands[activeBrand].length} {activeBrand}
+
+            {/* Next button */}
+            <button
+              onClick={nextSlide}
+              className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 p-2 rounded-l ${
+                currentSlide >= brands['Luxury Cars'].length - (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 1)
+                  ? 'opacity-50 cursor-not-allowed'
+                  : 'opacity-100 hover:bg-opacity-75'
+              }`}
+              disabled={currentSlide >= brands['Luxury Cars'].length - (window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 1)}
+            >
+              <ChevronRight className="w-6 h-6 text-white" />
             </button>
           </div>
         </div>
@@ -766,11 +665,17 @@ export default function Welcome({ }) {
                     key={index}
                     className="min-w-[200px] md:min-w-[250px] mx-2 md:mx-4 bg-gray-300 rounded-lg flex flex-col items-center justify-center p-4"
                   >
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="w-24 h-24 md:w-32 md:h-32 object-contain"
-                    />
+                    <div className="flex items-center justify-center" style={{ height: brand.name === 'Porsche' || brand.name === 'Bentley' ? '160px' : '128px' }}>
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        style={{
+                          width: brand.name === 'Porsche' || brand.name === 'Bentley' ? '160px' : '128px',
+                          height: brand.name === 'Porsche' || brand.name === 'Bentley' ? '160px' : '128px',
+                          objectFit: 'contain'
+                        }}
+                      />
+                    </div>
                     <p className="mt-2 text-center text-gray-800 font-semibold">
                       {brand.name}
                     </p>

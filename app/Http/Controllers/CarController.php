@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Car;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Inertia\Inertia;
 
 class CarController extends Controller
 {
@@ -12,7 +14,7 @@ class CarController extends Controller
      */
     public function index()
     {
-        //
+        return Car::with('brand')->get();
     }
 
     /**
@@ -28,7 +30,16 @@ class CarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'brand_id' => 'required|exists:brands,id',
+            'model' => 'required|string|max:255',
+            'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
+            'price' => 'required|numeric|min:0',
+        ]);
+
+        Car::create($validated);
+
+        return Redirect::back();
     }
 
     /**
@@ -60,6 +71,7 @@ class CarController extends Controller
      */
     public function destroy(Car $car)
     {
-        //
+        $car->delete();
+        return Redirect::back();
     }
 }

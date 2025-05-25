@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Inertia\Inertia;
 
 class BrandController extends Controller
 {
@@ -12,7 +14,7 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        return Brand::all();
     }
 
     /**
@@ -28,7 +30,14 @@ class BrandController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+        ]);
+
+        Brand::create($validated);
+
+        return Redirect::back();
     }
 
     /**
@@ -60,6 +69,7 @@ class BrandController extends Controller
      */
     public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+        return Redirect::back();
     }
 }
